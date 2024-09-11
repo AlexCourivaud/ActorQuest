@@ -1,0 +1,27 @@
+body {
+  background-color: beige;
+  padding: 20px;
+}
+
+.search-bar {
+  background-color: rgb(206, 227, 234);
+  width: 90%;
+  height: 20vh;
+}
+.actor-container {
+  display: flex;
+  flex-direction: row;
+}
+.actor-list {
+  margin: 10px;
+  background-color: rgb(255, 236, 195);
+  width: 90%;
+  height: 50vh;
+}
+
+.actor-card {
+  background-color: rgb(239, 205, 210);
+  margin: 10px;
+  width: 70%;
+  height: 50vh;
+}
