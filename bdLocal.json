@@ -1,4 +1,32 @@
 {
+  "adult": false,
+  "also_known_as": [
+    "كريس باين",
+    "크리스 파인",
+    "クリス・パイン",
+    "克里斯·潘恩",
+    "คริส ไพน์",
+    "Christopher Whitelaw \"Chris\" Pine",
+    "کریس پاین",
+    "כריס פיין",
+    "כריסטופר וייטלוו פיין "
+  ],
+  "biography": "Christopher Whitelaw \"Chris\" Pine est un acteur américain né le 26 août 1980.  Depuis 2009, il incarne James T. Kirk dans les films de la saga Star Trek.",
+  "birthday": "1980-08-26",
+  "deathday": null,
+  "gender": 2,
+  "homepage": null,
+  "id": 62064,
+  "imdb_id": "nm1517976",
+  "known_for_department": "Acting",
+  "name": "Chris Pine",
+  "place_of_birth": "Los Angeles, California, USA",
+  "popularity": 21.345,
+  "profile_path": "/c3t25zVaWD3IzsMdCDqg4FsoHFl.jpg"
+}
+
+
+{
   "page": 1,
   "results": [
     {
@@ -21,11 +49,7 @@
           "media_type": "movie",
           "adult": false,
           "original_language": "en",
-          "genre_ids": [
-            28,
-            12,
-            14
-          ],
+          "genre_ids": [28, 12, 14],
           "popularity": 79.972,
           "release_date": "2017-05-30",
           "video": false,
@@ -42,11 +66,7 @@
           "media_type": "movie",
           "adult": false,
           "original_language": "en",
-          "genre_ids": [
-            878,
-            28,
-            12
-          ],
+          "genre_ids": [878, 28, 12],
           "popularity": 49.79,
           "release_date": "2009-05-06",
           "video": false,
@@ -63,11 +83,7 @@
           "media_type": "movie",
           "adult": false,
           "original_language": "en",
-          "genre_ids": [
-            28,
-            12,
-            878
-          ],
+          "genre_ids": [28, 12, 878],
           "popularity": 38.75,
           "release_date": "2013-05-05",
           "video": false,
@@ -77,541 +93,448 @@
       ]
     },
     {
-  "adult": false,
-  "gender": 2,
-  "id": 73457,
-  "known_for_department": "Acting",
-  "name": "Chris Pratt",
-  "original_name": "Chris Pratt",
-  "popularity": 37.9,
-  "profile_path": "/83o3koL82jt30EJ0rz4Bnzrt2dd.jpg",
-  "known_for": [
-    {
-      "backdrop_path": "/uLtVbjvS1O7gXL8lUOwsFOH4man.jpg",
-      "id": 118340,
-      "title": "Les Gardiens de la Galaxie",
-      "original_title": "Guardians of the Galaxy",
-      "overview": "Peter Quill est un aventurier traqué par tous les chasseurs de primes pour avoir volé un mystérieux globe convoité par le puissant Ronan, dont les agissements menacent l’univers tout entier. Lorsqu’il découvre le véritable pouvoir de ce globe et la menace qui pèse sur la galaxie, il conclut une alliance fragile avec quatre aliens disparates : Rocket, un raton laveur fin tireur, Groot, un humanoïde semblable à un arbre, l’énigmatique et mortelle Gamora, et Drax le Destructeur, qui ne rêve que de vengeance. En les ralliant à sa cause, il les convainc de livrer un ultime combat aussi désespéré soit‐il pour sauver ce qui peut encore l’être…",
-      "poster_path": "/7fzEpgA30wv3InNs0fQ1N3GU451.jpg",
-      "media_type": "movie",
       "adult": false,
-      "original_language": "en",
-      "genre_ids": [
-        28,
-        878,
-        12
-      ],
-      "popularity": 42.404,
-      "release_date": "2014-07-30",
-      "video": false,
-      "vote_average": 7.907,
-      "vote_count": 27792
-    },
-    {
-      "backdrop_path": "/aJn9XeesqsrSLKcHfHP4u5985hn.jpg",
-      "id": 283995,
-      "title": "Les Gardiens de la Galaxie Vol. 2",
-      "original_title": "Guardians of the Galaxy Vol. 2",
-      "overview": "Avec en toile de fond l’Awesome Mixtape #2, Les Gardiens de la Galaxie Vol. 2 poursuit les aventures de l’équipe alors qu’ils traversent les confins du cosmos. Les Gardiens doivent se battre pour que leur nouvelle famille reste ensemble tandis qu’ils cherchent à percer le mystère de la véritable filiation de Star-Lord. De vieux ennemis deviennent de nouveaux alliés et des personnages appréciés des fans, issus des comics, viennent en aide à nos héros alors que l’Univers Cinématographique Marvel continue de se développer.",
-      "poster_path": "/tTnDWIADl5FbpxHBO07IQCNxyb9.jpg",
-      "media_type": "movie",
-      "adult": false,
-      "original_language": "en",
-      "genre_ids": [
-        878,
-        12,
-        28
-      ],
-      "popularity": 65.056,
-      "release_date": "2017-04-19",
-      "video": false,
-      "vote_average": 7.619,
-      "vote_count": 21337
-    },
-    {
-      "backdrop_path": "/dF6FjTZzRTENfB4R17HDN20jLT2.jpg",
-      "id": 135397,
-      "title": "Jurassic World",
-      "original_title": "Jurassic World",
-      "overview": "Après le décès de son fondateur John Hammond, la société de biotechnologie InGen a été rachetée par Simon Masrani, PDG de la Masrani Global Corporation. Deux décennies après les événements tragiques de 1993, un nouveau parc a ouvert ses portes sur Isla Nublar, au large du Costa Rica. C’est plus de vingt mille visiteurs qui débarquent chaque jour à « Jurassic World », le « plus grand parc à thèmes jamais construit dans l’histoire humaine » pour profiter pleinement du cadre idyllique de l’île et de ses attractions. Les scientifiques de la réserve biologique, sous la direction du Dr Henry Wu, étudient le comportement des animaux, des dinosaures vivants recréés à partir de leur ADN fossilisé dans de lʼambre. Mais alors que tout le monde croyait les leçons du passé assimilées, un nouvel incident éclate…",
-      "poster_path": "/gUY5B8OaRqPnLUwjNxITUTrPbIN.jpg",
-      "media_type": "movie",
-      "adult": false,
-      "original_language": "en",
-      "genre_ids": [
-        28,
-        12,
-        878,
-        53
-      ],
-      "popularity": 103.786,
-      "release_date": "2015-06-06",
-      "video": false,
-      "vote_average": 6.691,
-      "vote_count": 20167
-    }
-  ]
-},{
-  "adult": false,
-  "gender": 2,
-  "id": 72997,
-  "known_for_department": "Acting",
-  "name": "Chris Potter",
-  "original_name": "Chris Potter",
-  "popularity": 10.578,
-  "profile_path": "/buOqRGFZH26b3E9UnxFBphRg9ON.jpg",
-  "known_for": [
-    {
-      "backdrop_path": "/4P4sIkczJfOsX5QKDy5gf5RPqFQ.jpg",
-      "id": 10022,
-      "title": "Baby-Sittor",
-      "original_title": "The Pacifier",
-      "overview": "Shane Wolfe, un soldat d'élite, se voit confier la protection des enfants d'un scientifique assassiné. Coincé entre les plus redoutables des tueurs et une ado rebelle, un jeune qui déprime, une fan de kung-fu de 8 ans, son petit frère de 3 ans et un bébé, Shane va devoir se battre d'une main et faire chauffer le biberon de l'autre !",
-      "poster_path": "/71dvNFJ9bXLQS6LssBuuKlvE5HC.jpg",
-      "media_type": "movie",
-      "adult": false,
-      "original_language": "en",
-      "genre_ids": [
-        35,
-        10751,
-        28
-      ],
-      "popularity": 36.903,
-      "release_date": "2005-03-04",
-      "video": false,
-      "vote_average": 6.054,
-      "vote_count": 3000
-    },
-    {
-      "backdrop_path": "/5CPuNvSueKbCmltTzLAe8AiYS3u.jpg",
-      "id": 4574,
-      "name": "X-Men",
-      "original_name": "X-Men",
-      "overview": "Rejetés par la société, les mutants sont contraints de vivre dans la clandestinité. L'un d'entre eux, le professeur Charles Xavier, crée un institut pour mutants leur permettant ainsi de vivre une vie normale tout en développant leurs pouvoirs. L'idéal du Professeur Xavier se heurte à l'opposition farouche de la population et à des groupes extrémistes non dotés du facteur X, mais également à d'autres super mutants qui méprisent le dialogue et la condition humaine. Le combat pour la protection de l'humanité commence... Adaptation en série animée des célèbres comic's Books \"X-men\" de 1963 créé par Stan Lee et Jack Kirby",
-      "poster_path": "/jRGOY8KvL7hHrJcfKfXe99C4pc5.jpg",
-      "media_type": "tv",
-      "adult": false,
-      "original_language": "en",
-      "genre_ids": [
-        10762,
-        10765,
-        16,
-        10759
-      ],
-      "popularity": 113.461,
-      "first_air_date": "1992-10-31",
-      "vote_average": 8.2,
-      "vote_count": 1171,
-      "origin_country": [
-        "US"
+      "gender": 2,
+      "id": 73457,
+      "known_for_department": "Acting",
+      "name": "Chris Pratt",
+      "original_name": "Chris Pratt",
+      "popularity": 37.9,
+      "profile_path": "/83o3koL82jt30EJ0rz4Bnzrt2dd.jpg",
+      "known_for": [
+        {
+          "backdrop_path": "/uLtVbjvS1O7gXL8lUOwsFOH4man.jpg",
+          "id": 118340,
+          "title": "Les Gardiens de la Galaxie",
+          "original_title": "Guardians of the Galaxy",
+          "overview": "Peter Quill est un aventurier traqué par tous les chasseurs de primes pour avoir volé un mystérieux globe convoité par le puissant Ronan, dont les agissements menacent l’univers tout entier. Lorsqu’il découvre le véritable pouvoir de ce globe et la menace qui pèse sur la galaxie, il conclut une alliance fragile avec quatre aliens disparates : Rocket, un raton laveur fin tireur, Groot, un humanoïde semblable à un arbre, l’énigmatique et mortelle Gamora, et Drax le Destructeur, qui ne rêve que de vengeance. En les ralliant à sa cause, il les convainc de livrer un ultime combat aussi désespéré soit‐il pour sauver ce qui peut encore l’être…",
+          "poster_path": "/7fzEpgA30wv3InNs0fQ1N3GU451.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [28, 878, 12],
+          "popularity": 42.404,
+          "release_date": "2014-07-30",
+          "video": false,
+          "vote_average": 7.907,
+          "vote_count": 27792
+        },
+        {
+          "backdrop_path": "/aJn9XeesqsrSLKcHfHP4u5985hn.jpg",
+          "id": 283995,
+          "title": "Les Gardiens de la Galaxie Vol. 2",
+          "original_title": "Guardians of the Galaxy Vol. 2",
+          "overview": "Avec en toile de fond l’Awesome Mixtape #2, Les Gardiens de la Galaxie Vol. 2 poursuit les aventures de l’équipe alors qu’ils traversent les confins du cosmos. Les Gardiens doivent se battre pour que leur nouvelle famille reste ensemble tandis qu’ils cherchent à percer le mystère de la véritable filiation de Star-Lord. De vieux ennemis deviennent de nouveaux alliés et des personnages appréciés des fans, issus des comics, viennent en aide à nos héros alors que l’Univers Cinématographique Marvel continue de se développer.",
+          "poster_path": "/tTnDWIADl5FbpxHBO07IQCNxyb9.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [878, 12, 28],
+          "popularity": 65.056,
+          "release_date": "2017-04-19",
+          "video": false,
+          "vote_average": 7.619,
+          "vote_count": 21337
+        },
+        {
+          "backdrop_path": "/dF6FjTZzRTENfB4R17HDN20jLT2.jpg",
+          "id": 135397,
+          "title": "Jurassic World",
+          "original_title": "Jurassic World",
+          "overview": "Après le décès de son fondateur John Hammond, la société de biotechnologie InGen a été rachetée par Simon Masrani, PDG de la Masrani Global Corporation. Deux décennies après les événements tragiques de 1993, un nouveau parc a ouvert ses portes sur Isla Nublar, au large du Costa Rica. C’est plus de vingt mille visiteurs qui débarquent chaque jour à « Jurassic World », le « plus grand parc à thèmes jamais construit dans l’histoire humaine » pour profiter pleinement du cadre idyllique de l’île et de ses attractions. Les scientifiques de la réserve biologique, sous la direction du Dr Henry Wu, étudient le comportement des animaux, des dinosaures vivants recréés à partir de leur ADN fossilisé dans de lʼambre. Mais alors que tout le monde croyait les leçons du passé assimilées, un nouvel incident éclate…",
+          "poster_path": "/gUY5B8OaRqPnLUwjNxITUTrPbIN.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [28, 12, 878, 53],
+          "popularity": 103.786,
+          "release_date": "2015-06-06",
+          "video": false,
+          "vote_average": 6.691,
+          "vote_count": 20167
+        }
       ]
     },
     {
-      "backdrop_path": "/6W5zmMhUO9yHuVbsYQTJnjLFQnT.jpg",
-      "id": 32790,
-      "title": "Un soupçon de magie",
-      "original_title": "The Good Witch",
-      "overview": "Shérif de la ville de Middleton, Jake Russel élève seul ses enfants Brandon et Laurie depuis son veuvage. Un jour, la femme du maire l'informe de l'arrivée de Cassandra à Grey House, un château abandonné et réputé hanté. Aussitôt, les commérages vont bon train sur la belle et mystérieuse étrangère, surtout après l'ouverture de sa boutique de potions, bougies et livres anciens. Brandon et Laurie, eux, sont persuadés que Cassandra est une gentille sorcière.",
-      "poster_path": "/nZVOeGCbhLzIfCOB7BCvIrE2TaY.jpg",
-      "media_type": "movie",
       "adult": false,
-      "original_language": "en",
-      "genre_ids": [
-        10751,
-        14,
-        18,
-        10770
-      ],
-      "popularity": 16.268,
-      "release_date": "2008-01-19",
-      "video": false,
-      "vote_average": 7.007,
-      "vote_count": 143
-    }
-  ]
-},
-{
-  "adult": false,
-  "gender": 2,
-  "id": 11890,
-  "known_for_department": "Acting",
-  "name": "Chris Pedersen",
-  "original_name": "Chris Pedersen",
-  "popularity": 3.372,
-  "profile_path": null,
-  "known_for": [
-    {
-      "backdrop_path": "/3PQLohxgvjUQgF94sY5SEgVKSS6.jpg",
-      "id": 1089,
-      "title": "Point Break : Extrême limite",
-      "original_title": "Point Break",
-      "overview": "Johnny Utah, jeune recrue du FBI, se voit confier sa première enquête: démanteler un réseau de braqueurs responsables de vingt-six attaques de banques et surnommé \"les anciens présidents\". Convaincu d'avoir à faire à d'intrépides surfeurs, Johny décide d'infiltrer le milieu de la planche... Action, suspense, casting époustouflant, tous les ingrédients sont réunis pour faire de Point Break un film prenant.",
-      "poster_path": "/3BUYyDihm6ywiEpODYD3xngF2W7.jpg",
-      "media_type": "movie",
-      "adult": false,
-      "original_language": "en",
-      "genre_ids": [
-        28,
-        53,
-        80
-      ],
-      "popularity": 29.505,
-      "release_date": "1991-07-12",
-      "video": false,
-      "vote_average": 7.161,
-      "vote_count": 3481
-    },
-    {
-      "backdrop_path": "/wjt1dwtabVm9vujAteDTnXnpHfZ.jpg",
-      "id": 792,
-      "title": "Platoon",
-      "original_title": "Platoon",
-      "overview": "Septembre 1967 : Chris Taylor, dix‐neuf ans, rejoint la compagnie Bravo du 25ème régiment d’infanterie, près de la frontière cambodgienne. Chris, issu d’une famille bourgeoise s’est engagé volontairement et, plein d’idéal entend bien servir son pays. Mais la réalité est tout autre et ses illusions vont tomber les unes après les autres. Il sera également témoin de la rivalité sanglante qui oppose deux officiers qu’il admire.",
-      "poster_path": "/rehBWOx9AIkZRKVuiemWvAMH40.jpg",
-      "media_type": "movie",
-      "adult": false,
-      "original_language": "en",
-      "genre_ids": [
-        18,
-        10752,
-        28
-      ],
-      "popularity": 39.034,
-      "release_date": "1986-12-19",
-      "video": false,
-      "vote_average": 7.742,
-      "vote_count": 4458
-    },
-    {
-      "backdrop_path": "/1t0SonlKEQy4XHZcIu0SgQNrdJ5.jpg",
-      "id": 28054,
-      "title": "Les Loubards",
-      "original_title": "Suburbia",
-      "overview": "Evan et son petit frère, deux gosses mal compris et malheureux chez eux, décident de claquer la porte de leur foyer. Devant eux : le vide. La zone. La rue. Bientôt, ils rejoignent une bande de punks, tous aussi désœuvrés, qui squattent une vieille maison dans une banlieue ouvrière. Mais leur présence ne plait pas du tout aux habitants du coin qui décident de \"nettoyer les lieux\". Commence alors une escalade dans la violence.",
-      "poster_path": "/6bMixbyW8y1klTJDy7ETAt9h1eJ.jpg",
-      "media_type": "movie",
-      "adult": false,
-      "original_language": "en",
-      "genre_ids": [
-        18,
-        10402,
-        53
-      ],
-      "popularity": 7.778,
-      "release_date": "1984-04-13",
-      "video": false,
-      "vote_average": 6.654,
-      "vote_count": 81
-    }
-  ]
-},
-{
-  "adult": false,
-  "gender": 2,
-  "id": 35546,
-  "known_for_department": "Crew",
-  "name": "Chris Palermo",
-  "original_name": "Chris Palermo",
-  "popularity": 2.314,
-  "profile_path": "/ni3d2IaSUk651Yq9HWfoa1Pezya.jpg",
-  "known_for": [
-    {
-      "backdrop_path": "/9BBTo63ANSmhC4e6r62OJFuK2GL.jpg",
-      "id": 24428,
-      "title": "Avengers",
-      "original_title": "The Avengers",
-      "overview": "Lorsque la sécurité et l’équilibre de la planète sont menacés par un ennemi d’un genre nouveau, Nick Fury, le directeur du SHIELD, l’agence internationale du maintien de la paix, réunit une équipe pour empêcher le monde de basculer dans le chaos. Partout sur Terre, le recrutement des nouveaux héros dont le monde a besoin commence…",
-      "poster_path": "/ylsAO88v2tF0iXRFojPa0UaAJf1.jpg",
-      "media_type": "movie",
-      "adult": false,
-      "original_language": "en",
-      "genre_ids": [
-        878,
-        28,
-        12
-      ],
-      "popularity": 145.375,
-      "release_date": "2012-04-25",
-      "video": false,
-      "vote_average": 7.718,
-      "vote_count": 30469
-    },
-    {
-      "backdrop_path": "/cyecB7godJ6kNHGONFjUyVN9OX5.jpg",
-      "id": 1726,
-      "title": "Iron Man",
-      "original_title": "Iron Man",
-      "overview": "Tony Stark, inventeur de génie, vendeur d'armes et playboy milliardaire, est kidnappé. Forcé par ses ravisseurs de fabriquer une arme redoutable, il construit en secret une armure high-tech révolutionnaire qu'il utilise pour s'échapper. Comprenant la puissance de cette armure, il décide de l'améliorer et de l'utiliser pour faire régner la justice et protéger les innocents.",
-      "poster_path": "/egEkFOCl87aHJLkIGXGxzNdpQV3.jpg",
-      "media_type": "movie",
-      "adult": false,
-      "original_language": "en",
-      "genre_ids": [
-        28,
-        878,
-        12
-      ],
-      "popularity": 126.073,
-      "release_date": "2008-04-30",
-      "video": false,
-      "vote_average": 7.646,
-      "vote_count": 26104
-    },
-    {
-      "backdrop_path": "/6YwkGolwdOMNpbTOmLjoehlVWs5.jpg",
-      "id": 99861,
-      "title": "Avengers : L'Ère d'Ultron",
-      "original_title": "Avengers: Age of Ultron",
-      "overview": "Alors que Tony Stark tente de relancer un programme de maintien de la paix jusque-là suspendu, les choses tournent mal et les super-héros Iron Man, Captain America, Thor, Hulk, Black Widow et Hawkeye vont devoir à nouveau unir leurs forces pour combattre le plus puissant de leurs adversaires : le terrible Ultron, un être technologique terrifiant qui s’est juré d’éradiquer l’espèce humaine. Afin d’empêcher celui-ci d’accomplir ses sombres desseins, des alliances inattendues se scellent, les entraînant dans une incroyable aventure et une haletante course contre le temps…",
-      "poster_path": "/5eEp3sPiCfy46BKuaMXDB2djSbd.jpg",
-      "media_type": "movie",
-      "adult": false,
-      "original_language": "en",
-      "genre_ids": [
-        28,
-        12,
-        878
-      ],
-      "popularity": 122.434,
-      "release_date": "2015-04-22",
-      "video": false,
-      "vote_average": 7.275,
-      "vote_count": 22746
-    }
-  ]
-},
-{
-  "adult": false,
-  "gender": 2,
-  "id": 78438,
-  "known_for_department": "Production",
-  "name": "Chris Prynoski",
-  "original_name": "Chris Prynoski",
-  "popularity": 4.134,
-  "profile_path": "/m9a3hcH5zV5IvoCiYsuiWfY8Hir.jpg",
-  "known_for": [
-    {
-      "backdrop_path": "/nBrkOZyI75artyizuBFeya48KbO.jpg",
-      "id": 86831,
-      "name": "Love, Death & Robots",
-      "original_name": "Love, Death & Robots",
-      "overview": "Créatures terrifiantes, méchantes surprises et comédie noire convergent dans cette anthologie d’animation pour adulte présentée par Tim Miller et David Fincher. Une collection de courts métrages animés en tous genres: science fiction, fantasy, horreur et comédie.",
-      "poster_path": "/xIljZ4AxGPTr1uwDARaeBXUz5jP.jpg",
-      "media_type": "tv",
-      "adult": false,
-      "original_language": "en",
-      "genre_ids": [
-        16,
-        10765
-      ],
-      "popularity": 610.442,
-      "first_air_date": "2019-03-15",
-      "vote_average": 8.267,
-      "vote_count": 3215,
-      "origin_country": [
-        "US"
+      "gender": 2,
+      "id": 72997,
+      "known_for_department": "Acting",
+      "name": "Chris Potter",
+      "original_name": "Chris Potter",
+      "popularity": 10.578,
+      "profile_path": "/buOqRGFZH26b3E9UnxFBphRg9ON.jpg",
+      "known_for": [
+        {
+          "backdrop_path": "/4P4sIkczJfOsX5QKDy5gf5RPqFQ.jpg",
+          "id": 10022,
+          "title": "Baby-Sittor",
+          "original_title": "The Pacifier",
+          "overview": "Shane Wolfe, un soldat d'élite, se voit confier la protection des enfants d'un scientifique assassiné. Coincé entre les plus redoutables des tueurs et une ado rebelle, un jeune qui déprime, une fan de kung-fu de 8 ans, son petit frère de 3 ans et un bébé, Shane va devoir se battre d'une main et faire chauffer le biberon de l'autre !",
+          "poster_path": "/71dvNFJ9bXLQS6LssBuuKlvE5HC.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [35, 10751, 28],
+          "popularity": 36.903,
+          "release_date": "2005-03-04",
+          "video": false,
+          "vote_average": 6.054,
+          "vote_count": 3000
+        },
+        {
+          "backdrop_path": "/5CPuNvSueKbCmltTzLAe8AiYS3u.jpg",
+          "id": 4574,
+          "name": "X-Men",
+          "original_name": "X-Men",
+          "overview": "Rejetés par la société, les mutants sont contraints de vivre dans la clandestinité. L'un d'entre eux, le professeur Charles Xavier, crée un institut pour mutants leur permettant ainsi de vivre une vie normale tout en développant leurs pouvoirs. L'idéal du Professeur Xavier se heurte à l'opposition farouche de la population et à des groupes extrémistes non dotés du facteur X, mais également à d'autres super mutants qui méprisent le dialogue et la condition humaine. Le combat pour la protection de l'humanité commence... Adaptation en série animée des célèbres comic's Books \"X-men\" de 1963 créé par Stan Lee et Jack Kirby",
+          "poster_path": "/jRGOY8KvL7hHrJcfKfXe99C4pc5.jpg",
+          "media_type": "tv",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [10762, 10765, 16, 10759],
+          "popularity": 113.461,
+          "first_air_date": "1992-10-31",
+          "vote_average": 8.2,
+          "vote_count": 1171,
+          "origin_country": ["US"]
+        },
+        {
+          "backdrop_path": "/6W5zmMhUO9yHuVbsYQTJnjLFQnT.jpg",
+          "id": 32790,
+          "title": "Un soupçon de magie",
+          "original_title": "The Good Witch",
+          "overview": "Shérif de la ville de Middleton, Jake Russel élève seul ses enfants Brandon et Laurie depuis son veuvage. Un jour, la femme du maire l'informe de l'arrivée de Cassandra à Grey House, un château abandonné et réputé hanté. Aussitôt, les commérages vont bon train sur la belle et mystérieuse étrangère, surtout après l'ouverture de sa boutique de potions, bougies et livres anciens. Brandon et Laurie, eux, sont persuadés que Cassandra est une gentille sorcière.",
+          "poster_path": "/nZVOeGCbhLzIfCOB7BCvIrE2TaY.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [10751, 14, 18, 10770],
+          "popularity": 16.268,
+          "release_date": "2008-01-19",
+          "video": false,
+          "vote_average": 7.007,
+          "vote_count": 143
+        }
       ]
     },
     {
-      "backdrop_path": "/hdXQxlD4mep7qtC5TsvhIt840OV.jpg",
-      "id": 703771,
-      "title": "Deathstroke: Knights & Dragons - Le Film",
-      "original_title": "Deathstroke: Knights & Dragons - The Movie",
-      "overview": "Deathstroke: Knights & Dragons - The Movie offre une nouvelle vision de l’héritage de Deathstroke. Le mercenaire et maître assassin Slade Wilson mène deux vies : l’une comme le tueur implacable connu sous le nom de Deathstroke, et l’autre comme un père de famille dévoué. Lorsque ces mondes entrent en collision, forcés par le groupe terroriste vicieux connu sous le nom de H.I.V.E., c’est Slade le tueur qui doit se battre pour sauver ses proches, ainsi que ce qui reste de lui-même. Son âme déchirée et son jeune fils prisonnier, Deathstroke devra expier les péchés de son passé pour alimenter les batailles de son avenir !",
-      "poster_path": "/czTd4EGt1QOKDq8ZnsOqADA0fwr.jpg",
-      "media_type": "movie",
       "adult": false,
-      "original_language": "en",
-      "genre_ids": [
-        16,
-        28,
-        12,
-        878
-      ],
-      "popularity": 18.706,
-      "release_date": "2020-08-04",
-      "video": false,
-      "vote_average": 7,
-      "vote_count": 433
+      "gender": 2,
+      "id": 11890,
+      "known_for_department": "Acting",
+      "name": "Chris Pedersen",
+      "original_name": "Chris Pedersen",
+      "popularity": 3.372,
+      "profile_path": null,
+      "known_for": [
+        {
+          "backdrop_path": "/3PQLohxgvjUQgF94sY5SEgVKSS6.jpg",
+          "id": 1089,
+          "title": "Point Break : Extrême limite",
+          "original_title": "Point Break",
+          "overview": "Johnny Utah, jeune recrue du FBI, se voit confier sa première enquête: démanteler un réseau de braqueurs responsables de vingt-six attaques de banques et surnommé \"les anciens présidents\". Convaincu d'avoir à faire à d'intrépides surfeurs, Johny décide d'infiltrer le milieu de la planche... Action, suspense, casting époustouflant, tous les ingrédients sont réunis pour faire de Point Break un film prenant.",
+          "poster_path": "/3BUYyDihm6ywiEpODYD3xngF2W7.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [28, 53, 80],
+          "popularity": 29.505,
+          "release_date": "1991-07-12",
+          "video": false,
+          "vote_average": 7.161,
+          "vote_count": 3481
+        },
+        {
+          "backdrop_path": "/wjt1dwtabVm9vujAteDTnXnpHfZ.jpg",
+          "id": 792,
+          "title": "Platoon",
+          "original_title": "Platoon",
+          "overview": "Septembre 1967 : Chris Taylor, dix‐neuf ans, rejoint la compagnie Bravo du 25ème régiment d’infanterie, près de la frontière cambodgienne. Chris, issu d’une famille bourgeoise s’est engagé volontairement et, plein d’idéal entend bien servir son pays. Mais la réalité est tout autre et ses illusions vont tomber les unes après les autres. Il sera également témoin de la rivalité sanglante qui oppose deux officiers qu’il admire.",
+          "poster_path": "/rehBWOx9AIkZRKVuiemWvAMH40.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [18, 10752, 28],
+          "popularity": 39.034,
+          "release_date": "1986-12-19",
+          "video": false,
+          "vote_average": 7.742,
+          "vote_count": 4458
+        },
+        {
+          "backdrop_path": "/1t0SonlKEQy4XHZcIu0SgQNrdJ5.jpg",
+          "id": 28054,
+          "title": "Les Loubards",
+          "original_title": "Suburbia",
+          "overview": "Evan et son petit frère, deux gosses mal compris et malheureux chez eux, décident de claquer la porte de leur foyer. Devant eux : le vide. La zone. La rue. Bientôt, ils rejoignent une bande de punks, tous aussi désœuvrés, qui squattent une vieille maison dans une banlieue ouvrière. Mais leur présence ne plait pas du tout aux habitants du coin qui décident de \"nettoyer les lieux\". Commence alors une escalade dans la violence.",
+          "poster_path": "/6bMixbyW8y1klTJDy7ETAt9h1eJ.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [18, 10402, 53],
+          "popularity": 7.778,
+          "release_date": "1984-04-13",
+          "video": false,
+          "vote_average": 6.654,
+          "vote_count": 81
+        }
+      ]
     },
     {
-      "backdrop_path": "/zsy6D6MXkROv6ESN4i0cz7nCEb5.jpg",
-      "id": 135934,
-      "name": "La légende de Vox Machina",
-      "original_name": "The Legend of Vox Machina",
-      "overview": "Ils sont tapageurs, ils sont hétéroclites, ce sont des inadaptés devenus des mercenaires à louer. Vox Machina est plus intéressé par l'argent facile et la bière bon marché que par la protection du royaume. Mais lorsque le royaume est menacé par le mal, cet équipage bruyant se rend compte qu'il est le seul capable de rétablir la justice.",
-      "poster_path": "/1TneaKrAbloEgdeFPY7YBdA06ur.jpg",
-      "media_type": "tv",
       "adult": false,
-      "original_language": "en",
-      "genre_ids": [
-        16,
-        10765
-      ],
-      "popularity": 364.566,
-      "first_air_date": "2022-01-27",
-      "vote_average": 8.259,
-      "vote_count": 408,
-      "origin_country": [
-        "US"
+      "gender": 2,
+      "id": 35546,
+      "known_for_department": "Crew",
+      "name": "Chris Palermo",
+      "original_name": "Chris Palermo",
+      "popularity": 2.314,
+      "profile_path": "/ni3d2IaSUk651Yq9HWfoa1Pezya.jpg",
+      "known_for": [
+        {
+          "backdrop_path": "/9BBTo63ANSmhC4e6r62OJFuK2GL.jpg",
+          "id": 24428,
+          "title": "Avengers",
+          "original_title": "The Avengers",
+          "overview": "Lorsque la sécurité et l’équilibre de la planète sont menacés par un ennemi d’un genre nouveau, Nick Fury, le directeur du SHIELD, l’agence internationale du maintien de la paix, réunit une équipe pour empêcher le monde de basculer dans le chaos. Partout sur Terre, le recrutement des nouveaux héros dont le monde a besoin commence…",
+          "poster_path": "/ylsAO88v2tF0iXRFojPa0UaAJf1.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [878, 28, 12],
+          "popularity": 145.375,
+          "release_date": "2012-04-25",
+          "video": false,
+          "vote_average": 7.718,
+          "vote_count": 30469
+        },
+        {
+          "backdrop_path": "/cyecB7godJ6kNHGONFjUyVN9OX5.jpg",
+          "id": 1726,
+          "title": "Iron Man",
+          "original_title": "Iron Man",
+          "overview": "Tony Stark, inventeur de génie, vendeur d'armes et playboy milliardaire, est kidnappé. Forcé par ses ravisseurs de fabriquer une arme redoutable, il construit en secret une armure high-tech révolutionnaire qu'il utilise pour s'échapper. Comprenant la puissance de cette armure, il décide de l'améliorer et de l'utiliser pour faire régner la justice et protéger les innocents.",
+          "poster_path": "/egEkFOCl87aHJLkIGXGxzNdpQV3.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [28, 878, 12],
+          "popularity": 126.073,
+          "release_date": "2008-04-30",
+          "video": false,
+          "vote_average": 7.646,
+          "vote_count": 26104
+        },
+        {
+          "backdrop_path": "/6YwkGolwdOMNpbTOmLjoehlVWs5.jpg",
+          "id": 99861,
+          "title": "Avengers : L'Ère d'Ultron",
+          "original_title": "Avengers: Age of Ultron",
+          "overview": "Alors que Tony Stark tente de relancer un programme de maintien de la paix jusque-là suspendu, les choses tournent mal et les super-héros Iron Man, Captain America, Thor, Hulk, Black Widow et Hawkeye vont devoir à nouveau unir leurs forces pour combattre le plus puissant de leurs adversaires : le terrible Ultron, un être technologique terrifiant qui s’est juré d’éradiquer l’espèce humaine. Afin d’empêcher celui-ci d’accomplir ses sombres desseins, des alliances inattendues se scellent, les entraînant dans une incroyable aventure et une haletante course contre le temps…",
+          "poster_path": "/5eEp3sPiCfy46BKuaMXDB2djSbd.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [28, 12, 878],
+          "popularity": 122.434,
+          "release_date": "2015-04-22",
+          "video": false,
+          "vote_average": 7.275,
+          "vote_count": 22746
+        }
       ]
-    }
-  ]
-},
+    },
+    {
+      "adult": false,
+      "gender": 2,
+      "id": 78438,
+      "known_for_department": "Production",
+      "name": "Chris Prynoski",
+      "original_name": "Chris Prynoski",
+      "popularity": 4.134,
+      "profile_path": "/m9a3hcH5zV5IvoCiYsuiWfY8Hir.jpg",
+      "known_for": [
+        {
+          "backdrop_path": "/nBrkOZyI75artyizuBFeya48KbO.jpg",
+          "id": 86831,
+          "name": "Love, Death & Robots",
+          "original_name": "Love, Death & Robots",
+          "overview": "Créatures terrifiantes, méchantes surprises et comédie noire convergent dans cette anthologie d’animation pour adulte présentée par Tim Miller et David Fincher. Une collection de courts métrages animés en tous genres: science fiction, fantasy, horreur et comédie.",
+          "poster_path": "/xIljZ4AxGPTr1uwDARaeBXUz5jP.jpg",
+          "media_type": "tv",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [16, 10765],
+          "popularity": 610.442,
+          "first_air_date": "2019-03-15",
+          "vote_average": 8.267,
+          "vote_count": 3215,
+          "origin_country": ["US"]
+        },
+        {
+          "backdrop_path": "/hdXQxlD4mep7qtC5TsvhIt840OV.jpg",
+          "id": 703771,
+          "title": "Deathstroke: Knights & Dragons - Le Film",
+          "original_title": "Deathstroke: Knights & Dragons - The Movie",
+          "overview": "Deathstroke: Knights & Dragons - The Movie offre une nouvelle vision de l’héritage de Deathstroke. Le mercenaire et maître assassin Slade Wilson mène deux vies : l’une comme le tueur implacable connu sous le nom de Deathstroke, et l’autre comme un père de famille dévoué. Lorsque ces mondes entrent en collision, forcés par le groupe terroriste vicieux connu sous le nom de H.I.V.E., c’est Slade le tueur qui doit se battre pour sauver ses proches, ainsi que ce qui reste de lui-même. Son âme déchirée et son jeune fils prisonnier, Deathstroke devra expier les péchés de son passé pour alimenter les batailles de son avenir !",
+          "poster_path": "/czTd4EGt1QOKDq8ZnsOqADA0fwr.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [16, 28, 12, 878],
+          "popularity": 18.706,
+          "release_date": "2020-08-04",
+          "video": false,
+          "vote_average": 7,
+          "vote_count": 433
+        },
+        {
+          "backdrop_path": "/zsy6D6MXkROv6ESN4i0cz7nCEb5.jpg",
+          "id": 135934,
+          "name": "La légende de Vox Machina",
+          "original_name": "The Legend of Vox Machina",
+          "overview": "Ils sont tapageurs, ils sont hétéroclites, ce sont des inadaptés devenus des mercenaires à louer. Vox Machina est plus intéressé par l'argent facile et la bière bon marché que par la protection du royaume. Mais lorsque le royaume est menacé par le mal, cet équipage bruyant se rend compte qu'il est le seul capable de rétablir la justice.",
+          "poster_path": "/1TneaKrAbloEgdeFPY7YBdA06ur.jpg",
+          "media_type": "tv",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [16, 10765],
+          "popularity": 364.566,
+          "first_air_date": "2022-01-27",
+          "vote_average": 8.259,
+          "vote_count": 408,
+          "origin_country": ["US"]
+        }
+      ]
+    },
 
-{
-  "adult": false,
-  "gender": 2,
-  "id": 56586,
-  "known_for_department": "Acting",
-  "name": "Chris Pontius",
-  "original_name": "Chris Pontius",
-  "popularity": 9.209,
-  "profile_path": "/fNthW6ozHId6veZmZO6dC1ofZhI.jpg",
-  "known_for": [
     {
-      "backdrop_path": "/t16qoOYC5rgkgKA7LWj8E5Nt9SL.jpg",
-      "id": 9012,
-      "title": "Jackass, le film",
-      "original_title": "Jackass: The Movie",
-      "overview": "Jackass : the movie s'inspire d'une émission diffusée sur MTV et dans laquelle des personnes accomplissent des challenges et des cascades plus risqués les uns que les autres.",
-      "poster_path": "/9Rb659hvGfmef1xm0mMvDHEBqmf.jpg",
-      "media_type": "movie",
       "adult": false,
-      "original_language": "en",
-      "genre_ids": [
-        35,
-        99
-      ],
-      "popularity": 15.721,
-      "release_date": "2002-10-25",
-      "video": false,
-      "vote_average": 6.303,
-      "vote_count": 1544
+      "gender": 2,
+      "id": 56586,
+      "known_for_department": "Acting",
+      "name": "Chris Pontius",
+      "original_name": "Chris Pontius",
+      "popularity": 9.209,
+      "profile_path": "/fNthW6ozHId6veZmZO6dC1ofZhI.jpg",
+      "known_for": [
+        {
+          "backdrop_path": "/t16qoOYC5rgkgKA7LWj8E5Nt9SL.jpg",
+          "id": 9012,
+          "title": "Jackass, le film",
+          "original_title": "Jackass: The Movie",
+          "overview": "Jackass : the movie s'inspire d'une émission diffusée sur MTV et dans laquelle des personnes accomplissent des challenges et des cascades plus risqués les uns que les autres.",
+          "poster_path": "/9Rb659hvGfmef1xm0mMvDHEBqmf.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [35, 99],
+          "popularity": 15.721,
+          "release_date": "2002-10-25",
+          "video": false,
+          "vote_average": 6.303,
+          "vote_count": 1544
+        },
+        {
+          "backdrop_path": "/eCP3PAiu442zkJWczdLdvALePNK.jpg",
+          "id": 12094,
+          "title": "Jackass deux, le film",
+          "original_title": "Jackass Number Two",
+          "overview": "Le deuxième volet des cascades et autres défis azimutés de la bande de Johnny Knoxville.",
+          "poster_path": "/pEBl9JtIJeCx1n76wRyFygV0REh.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [28, 35, 99],
+          "popularity": 13.934,
+          "release_date": "2006-09-22",
+          "video": false,
+          "vote_average": 6.556,
+          "vote_count": 1119
+        },
+        {
+          "backdrop_path": "/ta1KuiThmEqVkW2kvOeOHmKIpmn.jpg",
+          "id": 16290,
+          "title": "Jackass 3D",
+          "original_title": "Jackass 3D",
+          "overview": "Johnny Knoxville et sa bande de déjantés débarquent pour la première fois sur grand écran et en 3D !. Aïe !",
+          "poster_path": "/i8LXXIOjDFWPRScivHR8QSOPVAp.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [35, 99, 28],
+          "popularity": 19.54,
+          "release_date": "2010-10-15",
+          "video": false,
+          "vote_average": 6.615,
+          "vote_count": 1333
+        }
+      ]
     },
     {
-      "backdrop_path": "/eCP3PAiu442zkJWczdLdvALePNK.jpg",
-      "id": 12094,
-      "title": "Jackass deux, le film",
-      "original_title": "Jackass Number Two",
-      "overview": "Le deuxième volet des cascades et autres défis azimutés de la bande de Johnny Knoxville.",
-      "poster_path": "/pEBl9JtIJeCx1n76wRyFygV0REh.jpg",
-      "media_type": "movie",
       "adult": false,
-      "original_language": "en",
-      "genre_ids": [
-        28,
-        35,
-        99
-      ],
-      "popularity": 13.934,
-      "release_date": "2006-09-22",
-      "video": false,
-      "vote_average": 6.556,
-      "vote_count": 1119
-    },
-    {
-      "backdrop_path": "/ta1KuiThmEqVkW2kvOeOHmKIpmn.jpg",
-      "id": 16290,
-      "title": "Jackass 3D",
-      "original_title": "Jackass 3D",
-      "overview": "Johnny Knoxville et sa bande de déjantés débarquent pour la première fois sur grand écran et en 3D !. Aïe !",
-      "poster_path": "/i8LXXIOjDFWPRScivHR8QSOPVAp.jpg",
-      "media_type": "movie",
-      "adult": false,
-      "original_language": "en",
-      "genre_ids": [
-        35,
-        99,
-        28
-      ],
-      "popularity": 19.54,
-      "release_date": "2010-10-15",
-      "video": false,
-      "vote_average": 6.615,
-      "vote_count": 1333
-    }
-  ]
-},
-{
-  "adult": false,
-  "gender": 2,
-  "id": 1734175,
-  "known_for_department": "Acting",
-  "name": "Chris Patton",
-  "original_name": "Chris Patton",
-  "popularity": 12.296,
-  "profile_path": "/h7qCLOM41vbLCjPGtz5MvORGE4W.jpg",
-  "known_for": [
-    {
-      "backdrop_path": "/gqrnQA6Xppdl8vIb2eJc58VC1tW.jpg",
-      "id": 76341,
-      "title": "Mad Max : Fury Road",
-      "original_title": "Mad Max: Fury Road",
-      "overview": "Hanté par un lourd passé, Mad Max estime que le meilleur moyen de survivre est de rester seul. Cependant, il se retrouve embarqué par une bande qui parcourt le désert à bord d’un véhicule militaire piloté par l’Impératrice Furiosa. Ils fuient la Citadelle où sévit le terrible Immortan Joe qui s’est fait voler un objet irremplaçable. Enragé, ce Seigneur de guerre envoie ses hommes pour traquer les rebelles impitoyablement…",
-      "poster_path": "/oLy2V6AWSEfdPgKOtrSGnwB3Q2R.jpg",
-      "media_type": "movie",
-      "adult": false,
-      "original_language": "en",
-      "genre_ids": [
-        28,
-        12,
-        878
-      ],
-      "popularity": 99.726,
-      "release_date": "2015-05-13",
-      "video": false,
-      "vote_average": 7.613,
-      "vote_count": 22368
-    },
-    {
-      "backdrop_path": "/s9I2LmQMYCanl6DvC3X1AOHs2r8.jpg",
-      "id": 399361,
-      "title": "Triple Frontière",
-      "original_title": "Triple Frontier",
-      "overview": "Les loyautés sont mises à l'épreuve quand cinq anciens membres des forces spéciales font main basse sur la fortune d'un puissant baron de la drogue.",
-      "poster_path": "/8QmdMhPawTraDQmMHxiYM9wrQ7k.jpg",
-      "media_type": "movie",
-      "adult": false,
-      "original_language": "en",
-      "genre_ids": [
-        28,
-        53,
-        80,
-        12
-      ],
-      "popularity": 42.261,
-      "release_date": "2019-03-06",
-      "video": false,
-      "vote_average": 6.312,
-      "vote_count": 3127
-    },
-    {
-      "backdrop_path": "/1i1N0AVRb54H6ZFPDTwbo9MLxSF.jpg",
-      "id": 85271,
-      "name": "WandaVision",
-      "original_name": "WandaVision",
-      "overview": "Trois semaines après la fin des évènements liés à Thanos, Wanda Maximoff est dévastée par la mort de son compagnon, le synthézoïde Vision.  Elle se rend alors dans la petite ville de Westview dans le New Jersey, où Vision et elle avaient l'intention de s'installer, et y crée un univers fictif dans lequel elle contrôle l'esprit de tous les habitants.  Elle y développe un univers de sitcom dont chaque épisode avance d'une décennie à partir des années 1950, et y fait revivre Vision, avec qui elle a des jumeaux, Tommy et Billy.",
-      "poster_path": "/AXnCR7WE8BKlzsabQtUITySChn.jpg",
-      "media_type": "tv",
-      "adult": false,
-      "original_language": "en",
-      "genre_ids": [
-        10765,
-        9648,
-        18
-      ],
-      "popularity": 152.726,
-      "first_air_date": "2021-01-15",
-      "vote_average": 8.231,
-      "vote_count": 11880,
-      "origin_country": [
-        "US"
+      "gender": 2,
+      "id": 1734175,
+      "known_for_department": "Acting",
+      "name": "Chris Patton",
+      "original_name": "Chris Patton",
+      "popularity": 12.296,
+      "profile_path": "/h7qCLOM41vbLCjPGtz5MvORGE4W.jpg",
+      "known_for": [
+        {
+          "backdrop_path": "/gqrnQA6Xppdl8vIb2eJc58VC1tW.jpg",
+          "id": 76341,
+          "title": "Mad Max : Fury Road",
+          "original_title": "Mad Max: Fury Road",
+          "overview": "Hanté par un lourd passé, Mad Max estime que le meilleur moyen de survivre est de rester seul. Cependant, il se retrouve embarqué par une bande qui parcourt le désert à bord d’un véhicule militaire piloté par l’Impératrice Furiosa. Ils fuient la Citadelle où sévit le terrible Immortan Joe qui s’est fait voler un objet irremplaçable. Enragé, ce Seigneur de guerre envoie ses hommes pour traquer les rebelles impitoyablement…",
+          "poster_path": "/oLy2V6AWSEfdPgKOtrSGnwB3Q2R.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [28, 12, 878],
+          "popularity": 99.726,
+          "release_date": "2015-05-13",
+          "video": false,
+          "vote_average": 7.613,
+          "vote_count": 22368
+        },
+        {
+          "backdrop_path": "/s9I2LmQMYCanl6DvC3X1AOHs2r8.jpg",
+          "id": 399361,
+          "title": "Triple Frontière",
+          "original_title": "Triple Frontier",
+          "overview": "Les loyautés sont mises à l'épreuve quand cinq anciens membres des forces spéciales font main basse sur la fortune d'un puissant baron de la drogue.",
+          "poster_path": "/8QmdMhPawTraDQmMHxiYM9wrQ7k.jpg",
+          "media_type": "movie",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [28, 53, 80, 12],
+          "popularity": 42.261,
+          "release_date": "2019-03-06",
+          "video": false,
+          "vote_average": 6.312,
+          "vote_count": 3127
+        },
+        {
+          "backdrop_path": "/1i1N0AVRb54H6ZFPDTwbo9MLxSF.jpg",
+          "id": 85271,
+          "name": "WandaVision",
+          "original_name": "WandaVision",
+          "overview": "Trois semaines après la fin des évènements liés à Thanos, Wanda Maximoff est dévastée par la mort de son compagnon, le synthézoïde Vision.  Elle se rend alors dans la petite ville de Westview dans le New Jersey, où Vision et elle avaient l'intention de s'installer, et y crée un univers fictif dans lequel elle contrôle l'esprit de tous les habitants.  Elle y développe un univers de sitcom dont chaque épisode avance d'une décennie à partir des années 1950, et y fait revivre Vision, avec qui elle a des jumeaux, Tommy et Billy.",
+          "poster_path": "/AXnCR7WE8BKlzsabQtUITySChn.jpg",
+          "media_type": "tv",
+          "adult": false,
+          "original_language": "en",
+          "genre_ids": [10765, 9648, 18],
+          "popularity": 152.726,
+          "first_air_date": "2021-01-15",
+          "vote_average": 8.231,
+          "vote_count": 11880,
+          "origin_country": ["US"]
+        }
       ]
     }
-  ]
-}
-],
-"total_pages": 35,
-"total_results": 698
+  ],
+  "total_pages": 35,
+  "total_results": 698
 }
