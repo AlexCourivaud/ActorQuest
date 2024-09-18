@@ -121,8 +121,7 @@ function fctDisplayActorsList(actorsAPI) {
 
       if (actorsName[i].profile_path == null) {
         actornewImg.src = "assets/unknowprofilpp.png"; // on attrape l'asset photo inconnu
-        actornewImg.width = 400;
-        actornewImg.height = 600;
+
       } else {
         actornewImg.src =
           "https://image.tmdb.org/t/p/w400/" + actorsName[i].profile_path;
