@@ -13,12 +13,10 @@ body {
 }
 .actor-container {
   display: none;
-  flex-direction: row;
 }
 .actor-list {
   margin: 10px;
   background-color: rgb(255, 236, 195);
-  width: 1040px;
   flex-basis: 66.66%;
   border-radius: 10px;
 }
@@ -36,8 +34,7 @@ body {
 
 .actor-card > img {
   padding-top: 10px;
-  max-width: 400px;
-  max-height: 600px;
+  width: 70%;
 }
 
 .actor {
@@ -47,9 +44,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 22%;
   border-radius: 10px;
-  height: 220px;
 }
 
 .actor > img {
@@ -86,3 +81,4 @@ body {
   width: 250px;
   text-align: center;
 }
+

@@ -34,7 +34,6 @@ function fctDisplayActorsList(actorsAPI) {
 
   actorsList.innerHTML = ""; // on vide le résultat avant de recommencer.
   for (let i = 0; i < 20; i++) {
-
     let actorsDisplay = document.createElement("div"); // on créer la balise
     actorsDisplay.textContent = actorsName[i].name; //on ajoute le nom de l'acteur dans la var display
     actorsDisplay.classList.add("actor"); // on ajoute une class aux acteurs.
@@ -73,9 +72,7 @@ function fctDisplayActorsList(actorsAPI) {
         method: "GET",
         headers: {
           accept: "application/json",
-          Authorization:
-          `Bearer ${token}`,
-
+          Authorization: `Bearer ${token}`,
         },
       };
       fetch(
@@ -121,10 +118,9 @@ function fctDisplayActorsList(actorsAPI) {
 
       if (actorsName[i].profile_path == null) {
         actornewImg.src = "assets/unknowprofilpp.png"; // on attrape l'asset photo inconnu
-
       } else {
         actornewImg.src =
-          "https://image.tmdb.org/t/p/w400/" + actorsName[i].profile_path;
+          "https://image.tmdb.org/t/p/w300/" + actorsName[i].profile_path;
       }
       actorCard.appendChild(actornewCard);
       actorCard.appendChild(actornewImg);
@@ -142,8 +138,8 @@ function fctMovieInformation(movieInfoApi) {
     let movieCardsImg = document.createElement("img");
     movieCardsImg.src =
       "https://image.tmdb.org/t/p/w400/" + listMovies[i].poster_path;
-      movieCardsImg.width = 200;
-      movieCardsImg.height = 300;
+    movieCardsImg.width = 200;
+    movieCardsImg.height = 300;
     moviesList.appendChild(movieCards);
     movieCards.appendChild(movieCardsImg);
   }
