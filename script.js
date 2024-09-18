@@ -1,6 +1,7 @@
 // TODOs hide the API for Github
 //************** Import hidden API *********************//
 import { api } from "./scripthide.js";
+import { token } from "./scripthide.js";
 
 //************** Variables *********************//
 const searchBar = document.querySelector(".search-bar");
@@ -73,7 +74,8 @@ function fctDisplayActorsList(actorsAPI) {
         headers: {
           accept: "application/json",
           Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2Mzk1MTUyZDFhNTdjNWVkMTc5YTI2MzI1ODVjNTlmZSIsIm5iZiI6MTcyNjUxOTUwMi40MTE5NjMsInN1YiI6IjY2ZTE0N2IyYTZkOWQ2YzMzZGFmZTk1MiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.T4H7nEknTgWzc1_kHwedoG0cIv2tEi_ugyKrA6VR3aE",
+          `Bearer ${token}`,
+
         },
       };
       fetch(
