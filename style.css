@@ -57,9 +57,11 @@ body {
 .actor-result {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .movies-list {
+  display: none;
   background-color: orange;
   flex-wrap: wrap;
   border-radius: 10px;
@@ -81,4 +83,3 @@ body {
   width: 250px;
   text-align: center;
 }
-

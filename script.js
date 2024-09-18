@@ -15,6 +15,16 @@ function fctInputResearch() {
   // ***** on attrape la valeur entrée par l'utilisateur :
   searchInput.addEventListener("input", () => {
     var inputresearch = searchInput.value; // on la stock dans la variable
+    if (!searchInput.value) {
+      containerList.style.display = "none";
+      actorCard.style.display = "none";
+      moviesList.style.display = "none";
+      actorsList.style.display = "none";
+    } else {
+      containerList.style.display = "flex";
+      actorsList.style.display = "flex";
+    }
+
     // On récupère la BDD de l'api TMDB
     fetch(
       `https://api.themoviedb.org/3/search/person?api_key=${api}&query="${inputresearch}"&language=fr&page=1`
@@ -30,7 +40,6 @@ function fctInputResearch() {
 // ********** Fct display ****/
 function fctDisplayActorsList(actorsAPI) {
   let actorsName = actorsAPI.results;
-  containerList.style.display = "flex";
 
   actorsList.innerHTML = ""; // on vide le résultat avant de recommencer.
   for (let i = 0; i < 20; i++) {
@@ -130,6 +139,7 @@ function fctDisplayActorsList(actorsAPI) {
 
 function fctMovieInformation(movieInfoApi) {
   let listMovies = movieInfoApi.cast;
+
   for (let i = 0; i < listMovies.length; i++) {
     let movieCards = document.createElement("div");
     movieCards.classList.add("movie"); // on ajoute une class aux acteurs.
