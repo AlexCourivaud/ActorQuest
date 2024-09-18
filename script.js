@@ -16,11 +16,13 @@ function fctInputResearch() {
   searchInput.addEventListener("input", () => {
     var inputresearch = searchInput.value; // on la stock dans la variable
     if (!searchInput.value) {
+      // Si l'input est vide fait disparaitre les container :
       containerList.style.display = "none";
       actorCard.style.display = "none";
       moviesList.style.display = "none";
       actorsList.style.display = "none";
     } else {
+      // sinon on raffiche les container container List et Actor list
       containerList.style.display = "flex";
       actorsList.style.display = "flex";
     }
@@ -60,13 +62,14 @@ function fctDisplayActorsList(actorsAPI) {
       actorsDisplay.appendChild(img); // on ajoute l'image à l'html
     }
     actorsDisplay.addEventListener("click", () => {
-      actorCard.innerHTML = "";
-      moviesList.innerHTML = "";
+      // quand on click sur un acteur :
+      actorCard.innerHTML = ""; // ça vide le container de l'actor descrip
+      moviesList.innerHTML = ""; // ça vide le container des films ou l'acteur joue
+      actorCard.style.display = "flex"; // ça affiche le container de l'actor descrip
+      moviesList.style.display = "flex"; // ça affiche lcontainer des films ou l'acteur joue
 
-      actorCard.style.display = "flex";
-      moviesList.style.display = "flex";
-
-      let id = actorsName[i].id;
+      let id = actorsName[i].id; // on capte l'id d'un acteur dans une variable
+      // 2nd fetch de l'api pour récupéré les informations de l'acteur
       fetch(
         `https://api.themoviedb.org/3/person/${id}?api_key=${api}&language=fr`
       )
@@ -77,6 +80,7 @@ function fctDisplayActorsList(actorsAPI) {
         .then((response) => console.log(response + " //////finactorsearch"))
         .catch((err) => console.error(err));
 
+      //3eme fetch pour récupérer les films dans lesquels l'acteur a joué
       const options = {
         method: "GET",
         headers: {
@@ -95,10 +99,8 @@ function fctDisplayActorsList(actorsAPI) {
         .then((response) => console.log(response + " //////finmoviebyactorid"))
         .catch((err) => console.error(err));
 
-      //   On veut appliquer les informations de l'acteur dans la zone actors CARD a droite
+      // Fct pour afficher les éléments de l'API actors et movies
       function fctActorInformation(actInfoApi) {
-        let actorInfos = document.createElement("div");
-        actorInfos = actInfoApi;
         let actName = actInfoApi.name;
         let actBirthDate = actInfoApi.birthday;
         let actBirthPlace = actInfoApi.place_of_birth;
@@ -120,6 +122,7 @@ function fctDisplayActorsList(actorsAPI) {
 
         actorCard.appendChild(actorDesc);
         fctMovieInformation(movieInfoApi);
+        fctLastResearch(actorDesc);
       }
       let actornewCard = document.createElement("div");
       actornewCard.textContent = actorsName[i].name;
@@ -148,11 +151,23 @@ function fctMovieInformation(movieInfoApi) {
     let movieCardsImg = document.createElement("img");
     movieCardsImg.src =
       "https://image.tmdb.org/t/p/w400/" + listMovies[i].poster_path;
+    if (listMovies[i].poster_path == null) {
+      movieCardsImg.src = "assets/unknowprofilpp.png";
+    }
     movieCardsImg.width = 200;
     movieCardsImg.height = 300;
+
     moviesList.appendChild(movieCards);
     movieCards.appendChild(movieCardsImg);
   }
 }
 
 fctInputResearch();
+// const jsonLaunch = document.getElementById("jsonBtn");
+
+// function fctLastResearch(lastActors) {
+//   jsonLaunch.addEventListener("click", () => {
+//     alert("oui");
+//   });
+// }
+// fctLastResearch();

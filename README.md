@@ -11,3 +11,5 @@ Action required:
 Add the historic of last research.
 
 Clean et factorise the code.
+add a feature if a value in actors descrip is null or empty
+

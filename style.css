@@ -29,12 +29,13 @@ body {
   margin: 10px;
   flex-basis: 33.33%;
   border-radius: 15px;
-  padding-top: 10px;
+  padding: 10px;
 }
 
 .actor-card > img {
   padding-top: 10px;
   width: 70%;
+  border-radius: 10px;
 }
 
 .actor {
@@ -68,11 +69,6 @@ body {
   justify-content: space-around;
 }
 
-.movies-list > img {
-  margin: 4px;
-  width: 200px;
-}
-
 .movie {
   display: flex;
   flex-direction: column;
@@ -82,4 +78,10 @@ body {
   align-items: center;
   width: 250px;
   text-align: center;
+  padding: 5px;
+}
+
+.movie > img {
+  border-radius: 5px;
+  margin-top: 5px;
 }
