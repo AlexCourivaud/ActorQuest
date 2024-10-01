@@ -85,3 +85,10 @@ body {
   border-radius: 5px;
   margin-top: 5px;
 }
+
+.recent-research {
+  background-color: rgb(241, 216, 127);
+  border-radius: 10px;
+  display: flex;
+  margin-top: 10px;
+}

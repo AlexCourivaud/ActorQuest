@@ -10,6 +10,8 @@ const actorCard = document.querySelector(".actor-card");
 const searchInput = document.getElementById("search-input");
 const moviesList = document.querySelector(".movies-list");
 const containerList = document.querySelector(".actor-container");
+const historicSearch = document.querySelector(".recent-research");
+var countJson = 0;
 
 function fctInputResearch() {
   // ***** on attrape la valeur entrée par l'utilisateur :
@@ -67,7 +69,7 @@ function fctDisplayActorsList(actorsAPI) {
       moviesList.innerHTML = ""; // ça vide le container des films ou l'acteur joue
       actorCard.style.display = "flex"; // ça affiche le container de l'actor descrip
       moviesList.style.display = "flex"; // ça affiche lcontainer des films ou l'acteur joue
-
+      historicActors(actorsDisplay, img);
       let id = actorsName[i].id; // on capte l'id d'un acteur dans une variable
       // 2nd fetch de l'api pour récupéré les informations de l'acteur
       fetch(
@@ -149,8 +151,7 @@ function fctMovieInformation(movieInfoApi) {
 
     movieCards.textContent = listMovies[i].original_title;
     let movieCardsImg = document.createElement("img");
-    movieCardsImg.src =
-      "https://image.tmdb.org/t/p/w400/" + listMovies[i].poster_path;
+    movieCardsImg.src = "https://image.tmdb.org/t/p/w400/" + listMovies[i].poster_path;
     if (listMovies[i].poster_path == null) {
       movieCardsImg.src = "assets/unknowprofilpp.png";
     }
@@ -163,7 +164,8 @@ function fctMovieInformation(movieInfoApi) {
 }
 
 fctInputResearch();
-// const jsonLaunch = document.getElementById("jsonBtn");
+
+const jsonLaunch = document.getElementById("jsonBtn");
 
 // function fctLastResearch(lastActors) {
 //   jsonLaunch.addEventListener("click", () => {
@@ -171,3 +173,65 @@ fctInputResearch();
 //   });
 // }
 // fctLastResearch();
+
+// on récupère les derniers acteurs clické
+function historicActors(actorCardClicked, picture) {
+  let histoActors = document.createElement("div"); // on crée nouvel div
+  histoActors.innerHTML = actorCardClicked.innerHTML; // on place le nom et l'image dans la nouvelle var
+  histoActors.classList.add("actor"); // on utilise la meme classe que dans la zone de résultats
+  historicSearch.appendChild(histoActors); // on ajoute les elements au html.
+  //On compte les occurences de click et on veut limiter leur donner
+  countJson++;
+  if (countJson > 3) {
+    countJson = 1;
+  }
+  var historicArray = [];
+  historicArray.push(histoActors.innerHTML);
+  localStorage.setItem(`key ${countJson}`, JSON.stringify(historicArray));
+}
+
+// si des notes sont stockées :
+if (localStorage.getItem("notes")) {
+  // on les récupère :
+  let noteExistantes = localStorage.getItem("notes");
+  console.log("les notes récupérées : " + noteExistantes);
+
+  // on les parse :
+  let noteParses = JSON.parse(noteExistantes);
+  console.log("les notes après le parse : " + noteParses);
+
+  // on les push dans le tableau
+
+  noteParses.push(noteObject);
+  console.log("le nouveau tableau : " + noteParses);
+  localStorage.setItem("notes", JSON.stringify(noteParses));
+
+  alert("on a un objet");
+} else {
+  var noteArrays = [];
+  noteArrays.push(noteObject);
+  localStorage.setItem("notes", JSON.stringify(noteArrays));
+
+  alert("on pousse la note dans le tableau");
+}
+// on push l'ensemble dans le localStorage :
+
+alert("vous avez ajouter la note " + title);
+
+function displayNote() {
+  const parseNote = JSON.parse(localStorage.getItem("notes"));
+
+  console.log(parseNote);
+
+  for (i = 0; i < parseNote.length; i++) {
+    let ulCreate = document.createElement("ul");
+    ulCreate.className = "note";
+    ulCreate.innerHTML =
+      `<h1> ${parseNote[i].title} </h1>` +
+      `<p> ${parseNote[i].text} </p>` +
+      `<button id="deleteBtn">Supprimer</button>`;
+    notesListContainer.appendChild(ulCreate);
+  }
+}
+
+displayNote();
