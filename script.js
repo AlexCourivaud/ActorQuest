@@ -4,7 +4,6 @@ import { api } from "./scripthide.js";
 import { token } from "./scripthide.js";
 
 //************** Variables *********************//
-const searchBar = document.querySelector(".search-bar");
 const actorsList = document.querySelector(".actor-result");
 const actorCard = document.querySelector(".actor-card");
 const searchInput = document.getElementById("search-input");
@@ -12,8 +11,6 @@ const moviesList = document.querySelector(".movies-list");
 const containerList = document.querySelector(".actor-container");
 const historicSearch = document.querySelector(".recent-research");
 var countJson = 0;
-var countHistoric = 0;
-var histoindex = 1;
 
 //////********// fonction pour chercher les acteurs en fonction de ce qu'écrit l'utilisateur :
 function fctInputResearch() {
@@ -46,7 +43,7 @@ function fctInputResearch() {
   });
 }
 //_________________________________________________________________________________________________________________________________________________________
-// ********** Fct display ****/
+// ********** Fct display Actors ****/
 function fctDisplayActorsList(actorsAPI) {
   let actorsName = actorsAPI.results;
 
@@ -145,6 +142,7 @@ function fctDisplayActorsList(actorsAPI) {
     });
   }
 }
+// ********** Fct display Movies ****/
 
 function fctMovieInformation(movieInfoApi) {
   let listMovies = movieInfoApi.cast;
@@ -168,11 +166,9 @@ function fctMovieInformation(movieInfoApi) {
   }
 }
 
-fctInputResearch();
-localActorsStorage();
 
+// ********** Fct display historic before click ****/
 function localActorsStorage() {
-  // Fct pour afficher l'historique en rechargeant la page
   if (localStorage.length > 0) {
     historicSearch.innerHTML = [];
     // Si on a quelque dans localstorage on l'affiche
@@ -190,7 +186,7 @@ function localActorsStorage() {
   }
 }
 
-//  // Fct pour afficher l'historique en rechargeant la page
+// ********** Fct display historic after click ****/
 function historicActors(actorCardClicked) {
   // countJson++; // On place un compteur,
   // if(countJson > 3 ) {
@@ -198,43 +194,22 @@ function historicActors(actorCardClicked) {
   // }
   if (localStorage.length > 0) {
     //on verifie si ya un local storage ?
-    if (localStorage.length == 3) {
-      // S'il y a entre 2 et 3 éléments dans le LS
-
+    if (localStorage.length <= 3 && localStorage.length >= 2) {
+      // S'il y a3 éléments dans le LS
       // On récupère le LS :
       let jsonHistoricAct1 = JSON.parse(localStorage.getItem(`key ${1}`)); // 1er element du ls
       let jsonHistoricAct2 = JSON.parse(localStorage.getItem(`key ${2}`)); // 2nd Element du ls
       localStorage.setItem(`key ${2}`, JSON.stringify(jsonHistoricAct1)); // On remplace le 1 en 2
       localStorage.setItem(`key ${3}`, JSON.stringify(jsonHistoricAct2)); // On remplace le 2 en 3
       // On doit ajouter le click au 1er :
-
       let historicArray = []; // Nouvelle var pour stocker le click
       historicArray.push(actorCardClicked.innerHTML); // on met dans l'acteur cliqué dans l'array
       localStorage.setItem(`key ${1}`, JSON.stringify(historicArray)); // On place l'item dans le LS
-
-      // on doit afficher bien l'historique donc : on fait appel à la fonction histo :
-    }
-    if (localStorage.length == 2) {
-      // S'il y a entre 2 et 3 éléments dans le LS
-
-      // On récupère le LS :
-      let jsonHistoricAct1 = JSON.parse(localStorage.getItem(`key ${1}`)); // 1er element du ls
-      let jsonHistoricAct2 = JSON.parse(localStorage.getItem(`key ${2}`)); // 2nd Element du ls
-      localStorage.setItem(`key ${2}`, JSON.stringify(jsonHistoricAct1)); // On remplace le 1 en 2
-      localStorage.setItem(`key ${3}`, JSON.stringify(jsonHistoricAct2)); // On remplace le 2 en 3
-      // On doit ajouter le click au 1er :
-
-      let historicArray = []; // Nouvelle var pour stocker le click
-      historicArray.push(actorCardClicked.innerHTML); // on met dans l'acteur cliqué dans l'array
-      localStorage.setItem(`key ${1}`, JSON.stringify(historicArray)); // On place l'item dans le LS
-
-      // on doit afficher bien l'historique donc : on fait appel à la fonction histo :
     }
     if (localStorage.length == 1) {
       // S'il y a 1 element dans le LS
       let jsonHistoricAct1 = JSON.parse(localStorage.getItem(`key ${1}`)); // 1er element du ls
       localStorage.setItem(`key ${2}`, JSON.stringify(jsonHistoricAct1)); // On remplace le 1 en 2
-
       let historicArray = []; // Nouvelle var pour stocker le click
       historicArray.push(actorCardClicked.innerHTML); // on met dans l'acteur cliqué dans l'array
       localStorage.setItem(`key ${1}`, JSON.stringify(historicArray)); // On place l'item dans le LS
@@ -247,3 +222,8 @@ function historicActors(actorCardClicked) {
   }
   localActorsStorage(); // on réaffiche commme il faut l'histo
 }
+
+
+// Main Script //
+fctInputResearch();
+localActorsStorage();
