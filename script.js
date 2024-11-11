@@ -12,7 +12,10 @@ const moviesList = document.querySelector(".movies-list");
 const containerList = document.querySelector(".actor-container");
 const historicSearch = document.querySelector(".recent-research");
 var countJson = 0;
+var countHistoric = 0;
+var histoindex = 1;
 
+//////********// fonction pour chercher les acteurs en fonction de ce qu'écrit l'utilisateur :
 function fctInputResearch() {
   // ***** on attrape la valeur entrée par l'utilisateur :
   searchInput.addEventListener("input", () => {
@@ -35,18 +38,20 @@ function fctInputResearch() {
     )
       .then((response) => response.json())
       .then((data) => {
+        //////********//Ici on appelle la fonction pour afficher les actors en fct de la recherche :
         fctDisplayActorsList(data);
       })
       .then((response) => console.log(response + " //////fin"))
       .catch((err) => console.error(err));
   });
 }
+//_________________________________________________________________________________________________________________________________________________________
 // ********** Fct display ****/
 function fctDisplayActorsList(actorsAPI) {
   let actorsName = actorsAPI.results;
 
   actorsList.innerHTML = ""; // on vide le résultat avant de recommencer.
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 5; i++) {
     let actorsDisplay = document.createElement("div"); // on créer la balise
     actorsDisplay.textContent = actorsName[i].name; //on ajoute le nom de l'acteur dans la var display
     actorsDisplay.classList.add("actor"); // on ajoute une class aux acteurs.
@@ -63,8 +68,8 @@ function fctDisplayActorsList(actorsAPI) {
       actorsList.appendChild(actorsDisplay); // on ajoute le nom de l'acteur
       actorsDisplay.appendChild(img); // on ajoute l'image à l'html
     }
+    // TODO Nouvelle fonction a séparer 21/10
     actorsDisplay.addEventListener("click", () => {
-      // quand on click sur un acteur :
       actorCard.innerHTML = ""; // ça vide le container de l'actor descrip
       moviesList.innerHTML = ""; // ça vide le container des films ou l'acteur joue
       actorCard.style.display = "flex"; // ça affiche le container de l'actor descrip
@@ -124,7 +129,6 @@ function fctDisplayActorsList(actorsAPI) {
 
         actorCard.appendChild(actorDesc);
         fctMovieInformation(movieInfoApi);
-        fctLastResearch(actorDesc);
       }
       let actornewCard = document.createElement("div");
       actornewCard.textContent = actorsName[i].name;
@@ -145,93 +149,101 @@ function fctDisplayActorsList(actorsAPI) {
 function fctMovieInformation(movieInfoApi) {
   let listMovies = movieInfoApi.cast;
 
-  for (let i = 0; i < listMovies.length; i++) {
+  for (let i = 0; i < 5; i++) {
+    // 20 === listMovies.length
     let movieCards = document.createElement("div");
     movieCards.classList.add("movie"); // on ajoute une class aux acteurs.
 
     movieCards.textContent = listMovies[i].original_title;
     let movieCardsImg = document.createElement("img");
-    movieCardsImg.src = "https://image.tmdb.org/t/p/w400/" + listMovies[i].poster_path;
+    movieCardsImg.src =
+      "https://image.tmdb.org/t/p/w400/" + listMovies[i].poster_path;
     if (listMovies[i].poster_path == null) {
       movieCardsImg.src = "assets/unknowprofilpp.png";
     }
     movieCardsImg.width = 200;
     movieCardsImg.height = 300;
-
     moviesList.appendChild(movieCards);
     movieCards.appendChild(movieCardsImg);
   }
 }
 
 fctInputResearch();
+localActorsStorage();
 
-const jsonLaunch = document.getElementById("jsonBtn");
-
-// function fctLastResearch(lastActors) {
-//   jsonLaunch.addEventListener("click", () => {
-//     alert("oui");
-//   });
-// }
-// fctLastResearch();
-
-// on récupère les derniers acteurs clické
-function historicActors(actorCardClicked, picture) {
-  let histoActors = document.createElement("div"); // on crée nouvel div
-  histoActors.innerHTML = actorCardClicked.innerHTML; // on place le nom et l'image dans la nouvelle var
-  histoActors.classList.add("actor"); // on utilise la meme classe que dans la zone de résultats
-  historicSearch.appendChild(histoActors); // on ajoute les elements au html.
-  //On compte les occurences de click et on veut limiter leur donner
-  countJson++;
-  if (countJson > 3) {
-    countJson = 1;
-  }
-  var historicArray = [];
-  historicArray.push(histoActors.innerHTML);
-  localStorage.setItem(`key ${countJson}`, JSON.stringify(historicArray));
-}
-
-// si des notes sont stockées :
-if (localStorage.getItem("notes")) {
-  // on les récupère :
-  let noteExistantes = localStorage.getItem("notes");
-  console.log("les notes récupérées : " + noteExistantes);
-
-  // on les parse :
-  let noteParses = JSON.parse(noteExistantes);
-  console.log("les notes après le parse : " + noteParses);
-
-  // on les push dans le tableau
-
-  noteParses.push(noteObject);
-  console.log("le nouveau tableau : " + noteParses);
-  localStorage.setItem("notes", JSON.stringify(noteParses));
-
-  alert("on a un objet");
-} else {
-  var noteArrays = [];
-  noteArrays.push(noteObject);
-  localStorage.setItem("notes", JSON.stringify(noteArrays));
-
-  alert("on pousse la note dans le tableau");
-}
-// on push l'ensemble dans le localStorage :
-
-alert("vous avez ajouter la note " + title);
-
-function displayNote() {
-  const parseNote = JSON.parse(localStorage.getItem("notes"));
-
-  console.log(parseNote);
-
-  for (i = 0; i < parseNote.length; i++) {
-    let ulCreate = document.createElement("ul");
-    ulCreate.className = "note";
-    ulCreate.innerHTML =
-      `<h1> ${parseNote[i].title} </h1>` +
-      `<p> ${parseNote[i].text} </p>` +
-      `<button id="deleteBtn">Supprimer</button>`;
-    notesListContainer.appendChild(ulCreate);
+function localActorsStorage() {
+  // Fct pour afficher l'historique en rechargeant la page
+  if (localStorage.length > 0) {
+    historicSearch.innerHTML = [];
+    // Si on a quelque dans localstorage on l'affiche
+    historicSearch.style.display = "flex";
+    for (let i = 0; i <= localStorage.length; i++) {
+      let lastActorsSeen = JSON.parse(localStorage.getItem(`key ${i}`));
+      let histoActors = document.createElement("div"); // on crée nouvel div
+      histoActors.innerHTML = lastActorsSeen; // on place le nom et l'image dans la nouvelle var
+      histoActors.classList.add("actor"); // on utilise la meme classe que dans la zone de résultats
+      historicSearch.appendChild(histoActors);
+    }
+  } else {
+    // sinon on n'affiche pas l'historique
+    historicSearch.style.display = "none";
   }
 }
 
-displayNote();
+//  // Fct pour afficher l'historique en rechargeant la page
+function historicActors(actorCardClicked) {
+  // countJson++; // On place un compteur,
+  // if(countJson > 3 ) {
+  //   countJson = 1
+  // }
+  if (localStorage.length > 0) {
+    //on verifie si ya un local storage ?
+    if (localStorage.length == 3) {
+      // S'il y a entre 2 et 3 éléments dans le LS
+
+      // On récupère le LS :
+      let jsonHistoricAct1 = JSON.parse(localStorage.getItem(`key ${1}`)); // 1er element du ls
+      let jsonHistoricAct2 = JSON.parse(localStorage.getItem(`key ${2}`)); // 2nd Element du ls
+      localStorage.setItem(`key ${2}`, JSON.stringify(jsonHistoricAct1)); // On remplace le 1 en 2
+      localStorage.setItem(`key ${3}`, JSON.stringify(jsonHistoricAct2)); // On remplace le 2 en 3
+      // On doit ajouter le click au 1er :
+
+      let historicArray = []; // Nouvelle var pour stocker le click
+      historicArray.push(actorCardClicked.innerHTML); // on met dans l'acteur cliqué dans l'array
+      localStorage.setItem(`key ${1}`, JSON.stringify(historicArray)); // On place l'item dans le LS
+
+      // on doit afficher bien l'historique donc : on fait appel à la fonction histo :
+    }
+    if (localStorage.length == 2) {
+      // S'il y a entre 2 et 3 éléments dans le LS
+
+      // On récupère le LS :
+      let jsonHistoricAct1 = JSON.parse(localStorage.getItem(`key ${1}`)); // 1er element du ls
+      let jsonHistoricAct2 = JSON.parse(localStorage.getItem(`key ${2}`)); // 2nd Element du ls
+      localStorage.setItem(`key ${2}`, JSON.stringify(jsonHistoricAct1)); // On remplace le 1 en 2
+      localStorage.setItem(`key ${3}`, JSON.stringify(jsonHistoricAct2)); // On remplace le 2 en 3
+      // On doit ajouter le click au 1er :
+
+      let historicArray = []; // Nouvelle var pour stocker le click
+      historicArray.push(actorCardClicked.innerHTML); // on met dans l'acteur cliqué dans l'array
+      localStorage.setItem(`key ${1}`, JSON.stringify(historicArray)); // On place l'item dans le LS
+
+      // on doit afficher bien l'historique donc : on fait appel à la fonction histo :
+    }
+    if (localStorage.length == 1) {
+      // S'il y a 1 element dans le LS
+      let jsonHistoricAct1 = JSON.parse(localStorage.getItem(`key ${1}`)); // 1er element du ls
+      localStorage.setItem(`key ${2}`, JSON.stringify(jsonHistoricAct1)); // On remplace le 1 en 2
+
+      let historicArray = []; // Nouvelle var pour stocker le click
+      historicArray.push(actorCardClicked.innerHTML); // on met dans l'acteur cliqué dans l'array
+      localStorage.setItem(`key ${1}`, JSON.stringify(historicArray)); // On place l'item dans le LS
+    }
+  } else {
+    // ya pas de LS donc on met le 1er ok classique IZY
+    let historicArray = []; // Nouvelle var pour stocker le click
+    historicArray.push(actorCardClicked.innerHTML); // on met dans l'acteur cliqué dans l'array
+    localStorage.setItem(`key ${1}`, JSON.stringify(historicArray)); // On place l'item dans le LS
+  }
+  localActorsStorage(); // on réaffiche commme il faut l'histo
+}

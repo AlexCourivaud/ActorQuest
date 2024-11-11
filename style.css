@@ -34,7 +34,7 @@ body {
 
 .actor-card > img {
   padding-top: 10px;
-  width: 70%;
+  width: 30%;
   border-radius: 10px;
 }
 
@@ -87,8 +87,9 @@ body {
 }
 
 .recent-research {
+  
   background-color: rgb(241, 216, 127);
   border-radius: 10px;
-  display: flex;
+  display: none;
   margin-top: 10px;
 }
