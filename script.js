@@ -48,7 +48,7 @@ function fctDisplayActorsList(actorsAPI) {
   let actorsName = actorsAPI.results;
 
   actorsList.innerHTML = ""; // on vide le résultat avant de recommencer.
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 9; i++) {
     let actorsDisplay = document.createElement("div"); // on créer la balise
     actorsDisplay.textContent = actorsName[i].name; //on ajoute le nom de l'acteur dans la var display
     actorsDisplay.classList.add("actor"); // on ajoute une class aux acteurs.
@@ -147,8 +147,7 @@ function fctDisplayActorsList(actorsAPI) {
 function fctMovieInformation(movieInfoApi) {
   let listMovies = movieInfoApi.cast;
 
-  for (let i = 0; i < 5; i++) {
-    // 20 === listMovies.length
+  for (let i = 0; i < 40; i++) {
     let movieCards = document.createElement("div");
     movieCards.classList.add("movie"); // on ajoute une class aux acteurs.
 
@@ -224,6 +223,6 @@ function historicActors(actorCardClicked) {
 }
 
 
-// Main Script //
+// ********** Main Script ****/
 fctInputResearch();
 localActorsStorage();
