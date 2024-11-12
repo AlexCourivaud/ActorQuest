@@ -28,7 +28,6 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 10px;
-  flex-basis: 60;
   border-radius: 15px;
   padding: 10px;
   margin-top: -100px;
@@ -36,7 +35,7 @@ body {
 
 .actor-card > img {
   padding-top: 10px;
-  width: 30%;
+  width: 70;
   border-radius: 10px;
 }
 
@@ -66,7 +65,7 @@ body {
 
 .parttwo {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   
 
 }

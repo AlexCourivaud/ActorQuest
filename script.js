@@ -150,6 +150,7 @@ function fctMovieInformation(movieInfoApi) {
   for (let i = 0; i < 40; i++) {
     let movieCards = document.createElement("div");
     movieCards.classList.add("movie"); // on ajoute une class aux acteurs.
+    
 
     movieCards.textContent = listMovies[i].original_title;
     let movieCardsImg = document.createElement("img");
@@ -222,6 +223,31 @@ function historicActors(actorCardClicked) {
   localActorsStorage(); // on réaffiche commme il faut l'histo
 }
 
+
+// ********* Fct display films actors ***** /
+
+// fct click + fetch //
+function movieclick() {
+actorsDisplay.addEventListener("click", () => {
+
+// Le clic doit faire afficher les acteurs présents dans le film 
+
+// Fetch où l'on doit ajouter l'id du film cliqué
+  fetch(  'https://api.themoviedb.org/3/movie/580489/credits?language=fr-FR',
+    options
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      actorsInMovie(data);
+    })
+    .then((response) => console.log(response + " //////finmoviebyactorid"))
+    .catch((err) => console.error(err));
+  })
+}
+
+// Display actors in movie clicked //
+function actorsInMovie(movieClicked) {
+}
 
 // ********** Main Script ****/
 fctInputResearch();
