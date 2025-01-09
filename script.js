@@ -4,14 +4,12 @@ import { api } from "./scripthide.js";
 import { token } from "./scripthide.js";
 
 //************** Variables *********************//
-const searchBar = document.querySelector(".search-bar");
 const actorsList = document.querySelector(".actor-result");
 const actorCard = document.querySelector(".actor-card");
 const searchInput = document.getElementById("search-input");
 const moviesList = document.querySelector(".movies-list");
 const containerList = document.querySelector(".actor-container");
 const historicSearch = document.querySelector(".recent-research");
-var countJson = 0;
 
 function fctInputResearch() {
   // ***** on attrape la valeur entrée par l'utilisateur :
@@ -46,7 +44,7 @@ function fctDisplayActorsList(actorsAPI) {
   let actorsName = actorsAPI.results;
 
   actorsList.textContent = ""; // on vide le résultat avant de recommencer.
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 9; i++) {
     let actorsDisplay = document.createElement("div"); // on créer la balise
     actorsDisplay.textContent = actorsName[i].name; //on ajoute le nom de l'acteur dans la var display
     actorsDisplay.classList.add("actor"); // on ajoute une class aux acteurs.
@@ -107,9 +105,14 @@ function fctDisplayActorsList(actorsAPI) {
         let actBirthDate = actInfoApi.birthday;
         let actBirthPlace = actInfoApi.place_of_birth;
         let actJob = actInfoApi.known_for_department;
-        let actBio = actInfoApi.biography;
+        let actBio;
+        if (!actInfoApi.biography) {
+          actBio = "Aucune biographie disponible";
+        } else {
+          actBio = actInfoApi.biography;
+        }
 
-        // on crée les éléments de créer 
+        // on crée les éléments de créer
         let actorDesc = document.createElement("div");
 
         const details = [
@@ -117,9 +120,9 @@ function fctDisplayActorsList(actorsAPI) {
           ["Date de Naissance: ", actBirthDate],
           ["Lieu de naissance: ", actBirthPlace],
           ["Activité principale: ", actJob],
-          ["Biographie: ", actBio]
+          ["Biographie: ", actBio],
         ];
-        
+
         details.forEach(([label, value]) => {
           actorDesc.appendChild(paragraph(label, value));
         });
@@ -153,7 +156,8 @@ function fctMovieInformation(movieInfoApi) {
 
     movieCards.textContent = listMovies[i].original_title;
     let movieCardsImg = document.createElement("img");
-    movieCardsImg.src = "https://image.tmdb.org/t/p/w400/" + listMovies[i].poster_path;
+    movieCardsImg.src =
+      "https://image.tmdb.org/t/p/w400/" + listMovies[i].poster_path;
     if (listMovies[i].poster_path == null) {
       movieCardsImg.src = "assets/unknowprofilpp.png";
     }
@@ -164,11 +168,6 @@ function fctMovieInformation(movieInfoApi) {
     movieCards.appendChild(movieCardsImg);
   }
 }
-
-fctInputResearch();
-localActorsStorage();
-
-
 
 // ********** Fct display historic before click ****/
 function localActorsStorage() {
@@ -191,10 +190,6 @@ function localActorsStorage() {
 
 // ********** Fct display historic after click ****/
 function historicActors(actorCardClicked) {
-  // countJson++; // On place un compteur,
-  // if(countJson > 3 ) {
-  //   countJson = 1
-  // }
   if (localStorage.length > 0) {
     //on verifie si ya un local storage ?
     if (localStorage.length <= 3 && localStorage.length >= 2) {
@@ -226,10 +221,14 @@ function historicActors(actorCardClicked) {
   localActorsStorage(); // on réaffiche commme il faut l'histo
 }
 
-
 // ********** Fct basique ****/
-function paragraph(label, value) { //used in fctActorInformation 
+function paragraph(label, value) {
+  //used in fctActorInformation
   let p = document.createElement("p");
   p.textContent = label + value;
   return p;
 }
+
+// ********** MAIN SCRIPT ****/
+fctInputResearch();
+localActorsStorage();
