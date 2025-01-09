@@ -4,6 +4,7 @@ import { api } from "./scripthide.js";
 import { token } from "./scripthide.js";
 
 //************** Variables *********************//
+const searchBar = document.querySelector(".search-bar");
 const actorsList = document.querySelector(".actor-result");
 const actorCard = document.querySelector(".actor-card");
 const searchInput = document.getElementById("search-input");
@@ -12,7 +13,6 @@ const containerList = document.querySelector(".actor-container");
 const historicSearch = document.querySelector(".recent-research");
 var countJson = 0;
 
-//////********// fonction pour chercher les acteurs en fonction de ce qu'écrit l'utilisateur :
 function fctInputResearch() {
   // ***** on attrape la valeur entrée par l'utilisateur :
   searchInput.addEventListener("input", () => {
@@ -35,20 +35,18 @@ function fctInputResearch() {
     )
       .then((response) => response.json())
       .then((data) => {
-        //////********//Ici on appelle la fonction pour afficher les actors en fct de la recherche :
         fctDisplayActorsList(data);
       })
       .then((response) => console.log(response + " //////fin"))
       .catch((err) => console.error(err));
   });
 }
-//_________________________________________________________________________________________________________________________________________________________
-// ********** Fct display Actors ****/
+// ********** Fct display ****/
 function fctDisplayActorsList(actorsAPI) {
   let actorsName = actorsAPI.results;
 
-  actorsList.innerHTML = ""; // on vide le résultat avant de recommencer.
-  for (let i = 0; i < 9; i++) {
+  actorsList.textContent = ""; // on vide le résultat avant de recommencer.
+  for (let i = 0; i < 5; i++) {
     let actorsDisplay = document.createElement("div"); // on créer la balise
     actorsDisplay.textContent = actorsName[i].name; //on ajoute le nom de l'acteur dans la var display
     actorsDisplay.classList.add("actor"); // on ajoute une class aux acteurs.
@@ -65,10 +63,10 @@ function fctDisplayActorsList(actorsAPI) {
       actorsList.appendChild(actorsDisplay); // on ajoute le nom de l'acteur
       actorsDisplay.appendChild(img); // on ajoute l'image à l'html
     }
-    // TODO Nouvelle fonction a séparer 21/10
     actorsDisplay.addEventListener("click", () => {
-      actorCard.innerHTML = ""; // ça vide le container de l'actor descrip
-      moviesList.innerHTML = ""; // ça vide le container des films ou l'acteur joue
+      // quand on click sur un acteur :
+      actorCard.textContent = ""; // ça vide le container de l'actor descrip
+      moviesList.textContent = ""; // ça vide le container des films ou l'acteur joue
       actorCard.style.display = "flex"; // ça affiche le container de l'actor descrip
       moviesList.style.display = "flex"; // ça affiche lcontainer des films ou l'acteur joue
       historicActors(actorsDisplay, img);
@@ -111,21 +109,24 @@ function fctDisplayActorsList(actorsAPI) {
         let actJob = actInfoApi.known_for_department;
         let actBio = actInfoApi.biography;
 
+        // on crée les éléments de créer 
         let actorDesc = document.createElement("div");
-        actorDesc.innerHTML =
-          "<br> Nom: " +
-          actName +
-          "<br> Date de Naissance: " +
-          actBirthDate +
-          "<br> Lieu de naissance: " +
-          actBirthPlace +
-          "<br> Activité principale: " +
-          actJob +
-          "<br> Biographie: " +
-          actBio;
+
+        const details = [
+          ["Nom: ", actName],
+          ["Date de Naissance: ", actBirthDate],
+          ["Lieu de naissance: ", actBirthPlace],
+          ["Activité principale: ", actJob],
+          ["Biographie: ", actBio]
+        ];
+        
+        details.forEach(([label, value]) => {
+          actorDesc.appendChild(paragraph(label, value));
+        });
 
         actorCard.appendChild(actorDesc);
         fctMovieInformation(movieInfoApi);
+        fctLastResearch(actorDesc);
       }
       let actornewCard = document.createElement("div");
       actornewCard.textContent = actorsName[i].name;
@@ -142,35 +143,37 @@ function fctDisplayActorsList(actorsAPI) {
     });
   }
 }
-// ********** Fct display Movies ****/
 
 function fctMovieInformation(movieInfoApi) {
   let listMovies = movieInfoApi.cast;
 
-  for (let i = 0; i < 40; i++) {
+  for (let i = 0; i < 10; i++) {
     let movieCards = document.createElement("div");
     movieCards.classList.add("movie"); // on ajoute une class aux acteurs.
-    
 
     movieCards.textContent = listMovies[i].original_title;
     let movieCardsImg = document.createElement("img");
-    movieCardsImg.src =
-      "https://image.tmdb.org/t/p/w400/" + listMovies[i].poster_path;
+    movieCardsImg.src = "https://image.tmdb.org/t/p/w400/" + listMovies[i].poster_path;
     if (listMovies[i].poster_path == null) {
       movieCardsImg.src = "assets/unknowprofilpp.png";
     }
     movieCardsImg.width = 200;
     movieCardsImg.height = 300;
+
     moviesList.appendChild(movieCards);
     movieCards.appendChild(movieCardsImg);
   }
 }
 
+fctInputResearch();
+localActorsStorage();
+
+
 
 // ********** Fct display historic before click ****/
 function localActorsStorage() {
   if (localStorage.length > 0) {
-    historicSearch.innerHTML = [];
+    historicSearch.textContent = [];
     // Si on a quelque dans localstorage on l'affiche
     historicSearch.style.display = "flex";
     for (let i = 0; i <= localStorage.length; i++) {
@@ -224,31 +227,9 @@ function historicActors(actorCardClicked) {
 }
 
 
-// ********* Fct display films actors ***** /
-
-// fct click + fetch //
-function movieclick() {
-actorsDisplay.addEventListener("click", () => {
-
-// Le clic doit faire afficher les acteurs présents dans le film 
-
-// Fetch où l'on doit ajouter l'id du film cliqué
-  fetch(  'https://api.themoviedb.org/3/movie/580489/credits?language=fr-FR',
-    options
-  )
-    .then((response) => response.json())
-    .then((data) => {
-      actorsInMovie(data);
-    })
-    .then((response) => console.log(response + " //////finmoviebyactorid"))
-    .catch((err) => console.error(err));
-  })
+// ********** Fct basique ****/
+function paragraph(label, value) { //used in fctActorInformation 
+  let p = document.createElement("p");
+  p.textContent = label + value;
+  return p;
 }
-
-// Display actors in movie clicked //
-function actorsInMovie(movieClicked) {
-}
-
-// ********** Main Script ****/
-fctInputResearch();
-localActorsStorage();

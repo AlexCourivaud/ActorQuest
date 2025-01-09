@@ -31,6 +31,10 @@ body {
   border-radius: 15px;
   padding: 10px;
   margin-top: -100px;
+  flex-basis: 40%;
+  max-height: 650px;
+  overflow-y: scroll;
+  
 }
 
 .actor-card > img {
@@ -98,10 +102,12 @@ body {
 
 .recent-research {
   
+  
   background-color: rgb(241, 216, 127);
   border-radius: 10px;
   display: none;
   margin-top: 10px;
   flex-basis: 40%;
+  height: 250px; 
 
 }
