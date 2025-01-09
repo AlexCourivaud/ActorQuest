@@ -161,8 +161,6 @@ function fctMovieInformation(movieInfoApi) {
     if (listMovies[i].poster_path == null) {
       movieCardsImg.src = "assets/unknowprofilpp.png";
     }
-    movieCardsImg.width = 200;
-    movieCardsImg.height = 300;
 
     moviesList.appendChild(movieCards);
     movieCards.appendChild(movieCardsImg);
@@ -181,6 +179,7 @@ function localActorsStorage() {
       histoActors.innerHTML = lastActorsSeen; // on place le nom et l'image dans la nouvelle var
       histoActors.classList.add("actor"); // on utilise la meme classe que dans la zone de résultats
       historicSearch.appendChild(histoActors);
+
     }
   } else {
     // sinon on n'affiche pas l'historique
@@ -218,6 +217,7 @@ function historicActors(actorCardClicked) {
     historicArray.push(actorCardClicked.innerHTML); // on met dans l'acteur cliqué dans l'array
     localStorage.setItem(`key ${1}`, JSON.stringify(historicArray)); // On place l'item dans le LS
   }
+  
   localActorsStorage(); // on réaffiche commme il faut l'histo
 }
 
