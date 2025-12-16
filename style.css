@@ -3,7 +3,7 @@ body {
   padding: 20px;
 }
 
-.search-bar { 
+.search-bar {
   background-color: rgb(206, 227, 234);
   height: 8vh;
   margin: 15px;
@@ -34,7 +34,6 @@ body {
   flex-basis: 40%;
   max-height: 650px;
   overflow-y: scroll;
-  
 }
 
 .actor-card > img {
@@ -66,12 +65,9 @@ body {
   justify-content: center;
 }
 
-
 .parttwo {
   display: flex;
   flex-direction: row;
-  
-
 }
 .movies-list {
   display: none;
@@ -80,7 +76,6 @@ body {
   border-radius: 10px;
   justify-content: space-around;
   flex-basis: 60%;
-
 }
 
 .movie {
@@ -98,16 +93,16 @@ body {
 .movie > img {
   border-radius: 5px;
   margin-top: 5px;
+  width: 100%; 
+  height: auto; 
 }
 
 .recent-research {
-  
-  
   background-color: rgb(241, 216, 127);
   border-radius: 10px;
   display: none;
   margin-top: 10px;
   flex-basis: 40%;
-  height: 250px; 
+  height: 250px;
 
 }
