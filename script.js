@@ -203,6 +203,14 @@ function historicActors(actorCardClicked) {
       historicArray.push(actorCardClicked.innerHTML); // on met dans l'acteur cliqué dans l'array
       localStorage.setItem(`key ${1}`, JSON.stringify(historicArray)); // On place l'item dans le LS
     }
+    if (localStorage.length == 1) {
+      // S'il y a 1 element dans le LS
+      let jsonHistoricAct1 = JSON.parse(localStorage.getItem(`key ${1}`)); // 1er element du ls
+      localStorage.setItem(`key ${2}`, JSON.stringify(jsonHistoricAct1)); // On remplace le 1 en 2
+      let historicArray = []; // Nouvelle var pour stocker le click
+      historicArray.push(actorCardClicked.innerHTML); // on met dans l'acteur cliqué dans l'array
+      localStorage.setItem(`key ${1}`, JSON.stringify(historicArray)); // On place l'item dans le LS
+    }
   } else {
     // ya pas de LS donc on met le 1er ok classique IZY
     let historicArray = []; // Nouvelle var pour stocker le click
